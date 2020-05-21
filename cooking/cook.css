@@ -105,7 +105,6 @@ body {
 
 .orta {
     width: 22%;
-   
     border-radius: 15px;
     margin: 2% 0;
     box-sizing: border-box;
@@ -129,7 +128,6 @@ body {
 
 .orta a img {
     width: 100%;
-   
 }
 
 .alt-alan {
@@ -165,7 +163,7 @@ body {
 
 /*telefon için */
 
-@media only screen and (max-width:768) {
+@media only screen and (max-width:768px) {
     /*menu responsive kodu*/
     .menu-bar {
         justify-content: space-between;
@@ -182,26 +180,467 @@ body {
     .menu i {
         display: block;
         color: white;
+        cursor: pointer;
         font-size: 30px;
-        border:1px solid white;
-        padding:5px;
+        border: 12px solid white;
+        padding: 5px;
         border-radius: 15%;
         margin-top: 50%;
+        transition: 0.5s;
     }
-     /*orta alan responsive kodu*/
-     .orta{width: 100%;}
-     .orta .icerik{flex-direction: row;}
-    .icerik img , h3 p {padding: 1%;}
-
+    .logo p {
+        font-size: 22px;
+        transition: 0.9s;
+    }
+    /*orta alan responsive kodu*/
+    .orta {
+        width: 100%;
+    }
+    .orta .icerik {
+        flex-direction: row;
+    }
+    .icerik img, h3 p {
+        padding: 1%;
+    }
     /*alt alan responsive kodu*/
-    .alt-alan{ height: 80vh;}
-    .alt-alan .icerik{
+    .alt-alan {
+        height: 80vh;
+    }
+    .alt-alan .icerik {
         display: flex;
-        width:100% ;
-       
+        width: 100%;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
+}body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-bar {
+    height: 80px;
+    width: 100%;
+    background-color: #ff9a3b;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo {
+    margin-top: -20px;
+}
+
+.logo p {
+    font-size: 29px;
+    margin-top: 42px;
+    height: 100px;
+    color: white;
+}
+
+.menu ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 5px;
+    margin: 5px;
+}
+
+.menu a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    box-sizing: border-box;
+    border: 1px solid white;
+    pad: 10px;
+    transition: 0.5s;
+}
+
+.menu li:hover a {
+    color: 073f68;
+    background-color: white;
+}
+
+.menu i {
+    display: none;
+}
+
+/* GALERİ ALANI */
+
+.galeri {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(background.jpg);
+    width: 100%;
+    height: 50vh;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.galeri .web {
+    color: white;
+    font-family: calibri;
+    font-size: 30px;
+}
+
+.galeri a {
+    font-family: calibri;
+    color: #ff9a3b;
+    font-size: 20px;
+    padding: 10px;
+    text-decoration: none;
+    box-sizing: border-box;
+    border: 1px solid white;
+    background-color: rgba(255, 255, 255, 0.3);
+    transition: 0.5s;
+}
+
+.galeri a:hover {
+    color: #073f68;
+    background-color: white;
+    padding: 10px;
+}
+
+.web h4 {
+    border-bottom: 1px solid white;
+    padding-bottom: 20px;
+}
+
+/*ORTA ALAN*/
+
+.orta-alan {
+    display: flex;
+    width: 95%;
+    justify-content: space-around;
+}
+
+.orta {
+    width: 22%;
+    border-radius: 15px;
+    margin: 2% 0;
+    box-sizing: border-box;
+    background: linear-gradient(rgba(55, 74, 128, 0.3)), rgba(55, 74, 128, 0.8);
+}
+
+.orta .icerik {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    text-align: justify;
+    font-weight: verdana;
+    color: white;
+}
+
+.orta p {
+    text-indent: 15px;
+}
+
+.orta a img {
+    width: 100%;
+}
+
+.alt-alan {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 40vh;
+    background-color: #171717;
+    color: white;
+}
+
+.alt-alan .icerik {
+    width: 33%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: justify;
+    font-family: courier;
+}
+
+/*tablet için*/
+
+@media only screen and (max-width:992px) {
+    .orta-alan {
+        flex-wrap: wrap;
     }
-    
+    orta {
+        width: 48%;
+    }
+    .orta img {
+        width: 30%;
+    }
+}
+
+/*telefon için */
+
+@media only screen and (max-width:768px) {
+    /*menu responsive kodu*/
+    .menu-bar {
+        justify-content: space-between;
+    }
+    .menu-bar .logo {
+        margin-left: 10%;
+    }
+    .menu-bar .menu {
+        margin-right: 10%;
+    }
+    .menu ul {
+        display: none;
+    }
+    .menu i {
+        display: block;
+        color: white;
+        cursor: pointer;
+        font-size: 30px;
+        border: 12px solid white;
+        padding: 5px;
+        border-radius: 15%;
+        margin-top: 50%;
+        transition: 0.5s;
+    }
+    .logo p {
+        font-size: 22px;
+        transition: 0.9s;
+    }
+    /*orta alan responsive kodu*/
+    .orta {
+        width: 100%;
+    }
+    .orta .icerik {
+        flex-direction: row;
+    }
+    .icerik img, h3 p {
+        padding: 1%;
+    }
+    /*alt alan responsive kodu*/
+    .alt-alan {
+        height: 80vh;
+    }
+    .alt-alan .icerik {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-bar {
+    height: 80px;
+    width: 100%;
+    background-color: #ff9a3b;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo {
+    margin-top: -20px;
+}
+
+.logo p {
+    font-size: 29px;
+    margin-top: 42px;
+    height: 100px;
+    color: white;
+}
+
+.menu ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 5px;
+    margin: 5px;
+}
+
+.menu a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    box-sizing: border-box;
+    border: 1px solid white;
+    pad: 10px;
+    transition: 0.5s;
+}
+
+.menu li:hover a {
+    color: 073f68;
+    background-color: white;
+}
+
+.menu i {
+    display: none;
+}
+
+/* GALERİ ALANI */
+
+.galeri {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(background.jpg);
+    width: 100%;
+    height: 50vh;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.galeri .web {
+    color: white;
+    font-family: calibri;
+    font-size: 30px;
+}
+
+.galeri a {
+    font-family: calibri;
+    color: #ff9a3b;
+    font-size: 20px;
+    padding: 10px;
+    text-decoration: none;
+    box-sizing: border-box;
+    border: 1px solid white;
+    background-color: rgba(255, 255, 255, 0.3);
+    transition: 0.5s;
+}
+
+.galeri a:hover {
+    color: #073f68;
+    background-color: white;
+    padding: 10px;
+}
+
+.web h4 {
+    border-bottom: 1px solid white;
+    padding-bottom: 20px;
+}
+
+/*ORTA ALAN*/
+
+.orta-alan {
+    display: flex;
+    width: 95%;
+    justify-content: space-around;
+}
+
+.orta {
+    width: 22%;
+    border-radius: 15px;
+    margin: 2% 0;
+    box-sizing: border-box;
+    background: linear-gradient(rgba(55, 74, 128, 0.3)), rgba(55, 74, 128, 0.8);
+}
+
+.orta .icerik {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    text-align: justify;
+    font-weight: verdana;
+    color: white;
+}
+
+.orta p {
+    text-indent: 15px;
+}
+
+.orta a img {
+    width: 100%;
+}
+
+.alt-alan {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 40vh;
+    background-color: #171717;
+    color: white;
+}
+
+.alt-alan .icerik {
+    width: 33%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: justify;
+    font-family: courier;
+}
+
+/*tablet için*/
+
+@media only screen and (max-width:992px) {
+    .orta-alan {
+        flex-wrap: wrap;
+    }
+    orta {
+        width: 48%;
+    }
+    .orta img {
+        width: 30%;
+    }
+}
+
+/*telefon için */
+
+@media only screen and (max-width:768px) {
+    /*menu responsive kodu*/
+    .menu-bar {
+        justify-content: space-between;
+    }
+    .menu-bar .logo {
+        margin-left: 10%;
+    }
+    .menu-bar .menu {
+        margin-right: 10%;
+    }
+    .menu ul {
+        display: none;
+    }
+    .menu i {
+        display: block;
+        color: white;
+        cursor: pointer;
+        font-size: 30px;
+        border: 12px solid white;
+        padding: 5px;
+        border-radius: 15%;
+        margin-top: 50%;
+        transition: 0.5s;
+    }
+    .logo p {
+        font-size: 22px;
+        transition: 0.9s;
+    }
+    /*orta alan responsive kodu*/
+    .orta {
+        width: 100%;
+    }
+    .orta .icerik {
+        flex-direction: row;
+    }
+    .icerik img, h3 p {
+        padding: 1%;
+    }
+    /*alt alan responsive kodu*/
+    .alt-alan {
+        height: 80vh;
+    }
+    .alt-alan .icerik {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
